@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
-        p {
-            border: 2px solid red;
-            padding: 5px;
-        }
-        img {
-            width: 300px;
-            float: left;
-            margin-right: 10px;
-        }
-
-        .clearfix::after {
-            content: "";
-            display: block;
-            clear: both;
-        } 
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .header,footer {
+        background-color: indianred;
+        padding: 15px;
+        margin: 0;
+        font-size: 25px;
+        color: aliceblue;
+      }
+      .menu{
+        height: 300px;
+        width: 25%;
+        float: left;
+      }
+      .content{
+        width: 75%;
+        float: left;
+        height: 300px;
+      }
+      .content p{
+        padding: 20px;
+        
+      }
+      .menu ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .menu li{
+        padding: 20px;
+        margin: 20px;
+        background-color: blueviolet;
+        color:aliceblue
+      }
+      .menu li:hover{
+        cursor:pointer;
+        background-color: deeppink;
+      }
     </style>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header class="header">
+      <h1>Header</h1>
+    </header>
+    <main class="clearfix">
+        <div class="menu">
+           <ul>
+            <li>
+                HTML
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                JAVASCRIPT
+            </li>
+           </ul>
 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium culpa exercitationem quam ut asperiores illum sint deleniti ad molestiae, soluta laboriosam sapiente excepturi pariatur quae iusto possimus? Hic, quas quae?</p>
-
-    <p class="clearfix">
-        <img src="rowing.jpeg" alt="">
-        <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus dolorum, ducimus voluptatum voluptatem quod, autem perspiciatis, minima nesciunt doloribus aliquam eos repudiandae harum nisi molestias est commodi! Saepe, excepturi!
-        </span>
-        <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus dolorum, ducimus voluptatum voluptatem quod, autem perspiciatis, minima nesciunt doloribus aliquam eos repudiandae harum nisi molestias est commodi! Saepe, excepturi!
-            </span>
-            <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores temporibus dolorum, ducimus voluptatum voluptatem quod, autem perspiciatis, minima nesciunt doloribus aliquam eos repudiandae harum nisi molestias est commodi! Saepe, excepturi!
-                </span>
-    </p>
-
-</body>
+        </div>
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga inventore vero nesciunt quisquam voluptates ad, ratione facilis labore vel illo eius perspiciatis nam dolor quibusdam dolore reiciendis optio iure natus fugit tempora eos neque commodi impedit! Sunt cupiditate in, minima excepturi eum magni incidunt soluta tenetur accusantium adipisci, laudantium quasi ipsa odio voluptates doloremque dolore perspiciatis suscipit illo ut optio. Ex accusantium officia, in quod qui laborum neque temporibus. Ipsum distinctio eum explicabo soluta ab voluptatum blanditiis cumque quaerat? Doloremque minus harum at provident nesciunt? Perferendis possimus harum molestias voluptatem, maiores obcaecati aliquam ipsum repellat blanditiis aliquid aut facere repellendus.</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <h2>Footer</h2>
+    </footer>
+  </body>
 </html>
